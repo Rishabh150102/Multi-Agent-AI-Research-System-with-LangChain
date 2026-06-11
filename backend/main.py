@@ -4,11 +4,11 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from pipeline import run_research_pipeline
 
-app = FastAPI()
+app = FastAPI(title="AI Research Agent API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],  # tighten later for production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -16,6 +16,10 @@ app.add_middleware(
 
 class ResearchRequest(BaseModel):
     topic: str
+
+@app.get("/")
+def home():
+    return {"message": "AI Research Agent API is running"}
 
 @app.post("/generate-report")
 async def generate_report(request: ResearchRequest):
