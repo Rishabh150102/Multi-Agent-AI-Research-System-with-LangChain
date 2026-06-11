@@ -1,0 +1,130 @@
+# =========================
+
+# Python
+
+# =========================
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+
+.venv/
+venv/
+env/
+ENV/
+
+# Environment Variables
+
+.env
+.env.local
+.env.development
+.env.production
+
+# Python Build Files
+
+build/
+dist/
+*.egg-info/
+
+# Logs
+
+*.log
+
+# Testing
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+
+.vscode/
+.idea/
+
+# OS Files
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# React / Node
+
+# =========================
+
+frontend/node_modules/
+node_modules/
+
+# Build Outputs
+
+frontend/build/
+frontend/dist/
+build/
+dist/
+
+# React Environment Files
+
+frontend/.env
+frontend/.env.local
+
+# Package Manager Logs
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Cache
+
+.cache/
+.parcel-cache/
+
+# Vite
+
+.vite/
+
+# Next.js
+
+.next/
+
+# =========================
+
+# LangChain / AI Outputs
+
+# =========================
+
+outputs/
+reports/
+generated_reports/
+tmp/
+
+# Vector Databases
+
+chroma_db/
+.chromadb/
+faiss_index/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# =========================
+
+# Render
+
+# =========================
+
+.render/
+
+# =========================
+
+# Misc
+
+# =========================
+
+*.sqlite3
+*.db
+*.bak
+*.swp
